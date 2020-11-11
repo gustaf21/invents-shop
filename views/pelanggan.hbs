@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ judulhalaman}}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdnv9.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<style>
+  body {
+    background-image: url('data:image/jpeg;base64,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');
+    background-size: cover;
+  }
+  
+</style>
+</head>
+<body>  
+    <nav class="navbar navbar-light bg-dark">
+  <a href="/">HOME</a>
+  <a href="/pelanggan">PELANGGAN</a>
+  <a href="/penjualan">PENJUALAN</a>
+  <a href="/pendapatan">PENDAPATAN</a>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+    </nav>
+    <h1>PELANGGAN</h1>
+    
+    <form action="/pelanggan" method="POST">
+    <input type="text" name="inputNAMA" placeholder="NAMA">
+    <input type="text" name="inputALAMAT" placeholder="ALAMAT">
+    <input type="text" name="inputTELEPON" placeholder="TELEPON">
+     <button type="submit"> KENA TIPU!</button>
+    </form>
+    
+    <br/>
+    <table class="table table-hover">
+        <font color="white">
+        <thead>
+            <tr>
+                <th>NAMA</th>
+                <th>ALAMAT</th>
+                <th>TELEPON</th>
+                <th>BUKAN SIHIR!</th>
+            </tr>
+        </thead>
+        </font>
+        </nav>
+        <tbody class="table table-active">
+            {{#each data}}
+            <tr>
+                 <td>{{ NAMA }}</td>
+                <td>{{ ALAMAT }}</td>
+                <td>{{ TELEPON }}</td>
+             <td><a href="/hapus-NAMA/{{ NAMA }}"><button>SULAP!</button></a></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</nav>
+</body>
+</html>
